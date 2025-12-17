@@ -1,0 +1,6 @@
+#!/bin/bash
+docker container rm -f xfce4
+docker image ls | awk '{print $3}' | while read ID; do docker rmi -f ${ID}; done
+docker build -t xptsp/xfce4-monero-novnc:latest . && \
+  docker tag xptsp/xfce4-monero-novnc:latest xptsp/xfce4-monero-novnc:v0.18.4.4-2 && \
+  docker run -d --name xfce4 --shm-size 1g -p 6080:6080 -p 5900:5900 xptsp/xfce4-monero-novnc:latest
