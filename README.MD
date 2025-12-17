@@ -1,24 +1,25 @@
-# Docker XFCE desktop over HTTP running Monero GUI Wallet
+# XFCE desktop running Monero GUI Wallet over HTTP and VNC 
 
 A lightweight Linux workstation based on [Debian](https://debian.org/) that launches the
 Monero GUI Wallet app automatically at startup. Provides a **graphical desktop** via HTTP,
 as well as a VNC connection.
 
-**Based on one project**
- * [TheHolm/xfce4-desktop-over-http](https://github.com/TheHolm/xfce4-desktop-over-http)
+GitHub repository can be found here: [GitHub Repository](https://github.com/xptsp/xfce4-monero-novnc)
 
 ![Screenshot](https://github.com/xptsp/xfce4-monero-novnc/blob/main/files/screenshot.png?raw=true)
 
-## Main packages
+**Based on one project:** [TheHolm/xfce4-desktop-over-http](https://github.com/TheHolm/xfce4-desktop-over-http)
+
+# Main packages
 
 * **xfce4**   : Graphic desktop environment
 * **x11vnc**  : X vnc server
 * **novnc**    : HTTP-to-VNC gateway
 * **firefox-esr** : Web browser
 * **chromium**    : Web browser
-* [Monero GUI Wallet](https://www.getmonero.org/downloads/)
+* [Monero GUI Wallet](https://github.com/monero-project/monero-gui/releases/tag/v0.18.4.4)
 
-## Usage (synopsis)
+# Usage
 
 ```
 services:
@@ -37,13 +38,15 @@ services:
     restart: unless-stopped
 ```
 
-Connect to the virtual computer using any modern web browser by browsing to [<IP>:6080](http://127.0.0.1:6080).
+Connect to the virtual computer by either:
+- Using any modern web browser browsing to [YOUR-IP:6080](http://YOUR-IP:6080)
+- Connect to x11vnc via VNC at [YOUR-IP:6080](http://YOUR-IP:5900).
 
-## Changelog:
+# Changelog:
 
-**v0.18.4.4-2:**
+### ***v0.18.4.4-2:*** (Dec 17th, 2025)
 - User "user" now has password "password" by default.  Original password is unknown.
 - A few minor changes to Terminal settings.
 
-**v0.18.4.4:**
+### ***v0.18.4.4:*** (Dec 16th, 2025)
 - Initial release of image
