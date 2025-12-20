@@ -8,8 +8,6 @@ GitHub repository can be found here: [GitHub Repository](https://github.com/xpts
 
 ![Screenshot](https://github.com/xptsp/xfce4-monero-novnc/blob/main/files/screenshot.png?raw=true)
 
-**Based on one project:** [TheHolm/xfce4-desktop-over-http](https://github.com/TheHolm/xfce4-desktop-over-http)
-
 # Main packages
 
 * **xfce4**   : Graphic desktop environment
@@ -19,7 +17,7 @@ GitHub repository can be found here: [GitHub Repository](https://github.com/xpts
 * **chromium**    : Web browser
 * [Monero GUI Wallet](https://github.com/monero-project/monero-gui/releases/tag/v0.18.4.4)
 
-# Usage
+## Usage
 
 ```
 services:
@@ -42,7 +40,7 @@ Connect to the virtual computer by either:
 - Using any modern web browser browsing to [YOUR-IP:6080](http://YOUR-IP:6080)
 - Connect to x11vnc via VNC at [YOUR-IP:6080](http://YOUR-IP:5900).
 
-# Changelog:
+## Changelog:
 
 ### ***v0.18.4.4-2:*** (Dec 17th, 2025)
 - User "user" now has password "password" by default.  Original password is unknown.
@@ -50,3 +48,9 @@ Connect to the virtual computer by either:
 
 ### ***v0.18.4.4:*** (Dec 16th, 2025)
 - Initial release of image
+
+## References:
+
+- [GitHub repository TheHolm/xfce4-desktop-over-http](https://github.com/TheHolm/xfce4-desktop-over-http)
+- [Original Docker Hub container TheHolm/xfce4-desktop-over-http](https://hub.docker.com/r/theholm/xfce4-desktop-over-http)
+
